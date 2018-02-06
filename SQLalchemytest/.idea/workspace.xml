@@ -11,7 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SQLalchemytest$SQLAlchemy_core.coverage" NAME="SQLAlchemy_core Coverage Results" MODIFIED="1517815719307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SQLalchemytest$SQLAlchemy.coverage" NAME="SQLAlchemy Coverage Results" MODIFIED="1517810409617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SQLalchemytest$SQLAlchemy.coverage" NAME="SQLAlchemy Coverage Results" MODIFIED="1517902317137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -69,15 +69,21 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="fou" />
+        <option name="myItemId" value="foo" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="foo" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
         <option name="myItemId" value="main" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="addresses" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -85,11 +91,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SQLAlchemy.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SQLAlchemy.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SQLAlchemy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="86" column="52" lean-forward="false" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+            <state relative-caret-position="121">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -97,46 +103,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQLAlchemy_core.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.user" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/d5886445/599a22f6-fddc-4079-8080-58d4cebf4600/main.user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLAlchemy_core.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQLAlchemy_core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="435">
+              <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
                 <marker date="1517816381000" expanded="true" signature="1483:1772" ph="SELECT users... users" />
                 <marker date="1517816381000" expanded="true" signature="1790:2075" ph="SELECT users... users" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.addresses" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/fc3a5e30/eec14607-41aa-4c93-92b2-bac962267398/main.addresses">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.users" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/fc3a5e30/eec14607-41aa-4c93-92b2-bac962267398/main.users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -158,8 +149,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SQLAlchemy.py" />
         <option value="$PROJECT_DIR$/SQLAlchemy_core.py" />
+        <option value="$PROJECT_DIR$/SQLAlchemy.py" />
       </list>
     </option>
   </component>
@@ -212,6 +203,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -225,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SQLAlchemy_core">
+  <component name="RunManager" selected="Python.SQLAlchemy">
     <configuration default="false" name="SQLAlchemy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -435,8 +427,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.SQLAlchemy_core" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SQLAlchemy" />
+        <item index="0" class="java.lang.String" itemvalue="Python.SQLAlchemy" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SQLAlchemy_core" />
       </list>
     </recent_temporary>
   </component>
@@ -457,7 +449,7 @@
     <frame x="-792" y="-1058" width="1857" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14710744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15041323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2744681" sideWeight="0.50192416" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289256" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -493,15 +485,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SQLAlchemy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1770">
+          <caret line="118" column="14" lean-forward="true" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.addresses">
+    <entry file="dbDummy://dbtable:/d5886445/599a22f6-fddc-4079-8080-58d4cebf4600/main.user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -514,24 +506,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py">
+    <entry file="file://$PROJECT_DIR$/SQLAlchemy_core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31485">
-          <caret line="2099" column="24" lean-forward="true" selection-start-line="2099" selection-start-column="24" selection-end-line="2099" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="435">
+          <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <marker date="1517816381000" expanded="true" signature="1483:1772" ph="SELECT users... users" />
+            <marker date="1517816381000" expanded="true" signature="1790:2075" ph="SELECT users... users" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/SQLAlchemy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="86" column="52" lean-forward="false" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLAlchemy_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <marker date="1517816381000" expanded="true" signature="1483:1772" ph="SELECT users... users" />
+            <marker date="1517816381000" expanded="true" signature="1790:2075" ph="SELECT users... users" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -545,32 +550,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.addresses">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.addresses" />
+    <entry file="file:///usr/local/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31485">
+          <caret line="2099" column="24" lean-forward="true" selection-start-line="2099" selection-start-column="24" selection-end-line="2099" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
+    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.user" />
+    <entry file="file://$PROJECT_DIR$/SQLAlchemy.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.addresses" />
+    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.user" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c3ceb2e1-ebbd-46da-89d0-9df5c30ae52f/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -596,11 +596,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31485">
           <caret line="2099" column="24" lean-forward="false" selection-start-line="2099" selection-start-column="24" selection-end-line="2099" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.user">
+    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.user" />
+    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.addresses" />
+    <entry file="dbDummy://dbtable:/fc3a5e30/eec14607-41aa-4c93-92b2-bac962267398/main.users" />
+    <entry file="dbDummy://dbtable:/fc3a5e30/eec14607-41aa-4c93-92b2-bac962267398/main.addresses" />
+    <entry file="file://$PROJECT_DIR$/SQLAlchemy_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <marker date="1517816381000" expanded="true" signature="1483:1772" ph="SELECT users... users" />
+            <marker date="1517816381000" expanded="true" signature="1790:2075" ph="SELECT users... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d5886445/eec14607-41aa-4c93-92b2-bac962267398/main.users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -609,37 +624,10 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/fc3a5e30/a6f94575-987c-44d5-8ae7-8442c62c7197/main.addresses">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/fc3a5e30/eec14607-41aa-4c93-92b2-bac962267398/main.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/fc3a5e30/eec14607-41aa-4c93-92b2-bac962267398/main.addresses">
+    <entry file="dbDummy://dbtable:/d5886445/599a22f6-fddc-4079-8080-58d4cebf4600/main.user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -654,22 +642,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SQLAlchemy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="86" column="52" lean-forward="false" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+        <state relative-caret-position="121">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQLAlchemy_core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <marker date="1517816381000" expanded="true" signature="1483:1772" ph="SELECT users... users" />
-            <marker date="1517816381000" expanded="true" signature="1790:2075" ph="SELECT users... users" />
           </folding>
         </state>
       </provider>
