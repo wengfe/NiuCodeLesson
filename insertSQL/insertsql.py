@@ -70,6 +70,7 @@ def insert_row():
 
 
 if __name__ == '__main__':
+
     # print(ip2int('127.0.0.1'))
     # print("%02X" % int(126))
     # print(int('0', 16))
@@ -87,23 +88,64 @@ if __name__ == '__main__':
     import random
     import time
 
-    ip_list = map(lambda x: x[1], random.sample(nl_p_list, 100))
+    ip_list = list(map(lambda x: x[1], random.sample(nl_p_list, 100)))
     conn = login_sql()
+    #避免 mysql.connector InternalError: Unread result found 错误， 添加参数
     cursor = conn.cursor(buffered=True)
     # cursor.execute('SELECT * FROM ipdata WHERE 1780997668 BETWEEN startip AND endip')
+    ret_list = []
+    sql_list = []
+    sql_list2 = []
+    sql_str = 'SELECT {0}.* FROM (SELECT * FROM ipdata WHERE %s >=  startip ORDER BY startip DESC  LIMIT 1) {0}'
+    sql_str2 = 'SELECT {0}.* FROM (SELECT * FROM ipdata WHERE %s BETWEEN startip AND endip) {0}'
+
+    for i in range(len(ip_list)):
+        sql_list.append(sql_str.format('t' + str(i)) % ip_list[i])
+        sql_list2.append(sql_str2.format('t' + str(i)) % ip_list[i])
+    # for i in range(len(sql_list)):
+    #     print(sql_list[i])
+
+    # 拼接 SQL 语句
+    sql = ' union all '.join(sql_list)
+    sql2 = ' union all '.join(sql_list2)
+
+    # zip() 函数接受任意多个（包括0个和1个）序列作为参数，返回一个tuple列表
+    # dict() 函数是从可迭代对象来创建新字典。比如一个元组组成的列表
+
+
+
+    # print(sql)
     t0 = time.time()
-    for i in ip_list:
-        cursor.execute('SELECT * FROM ipdata WHERE %s >=  startip ORDER BY startip DESC LIMIT 1' %i)
-        result = cursor.fetchall()
+    # dict(zip(ip_list, cursor.execute(sql)))
+    cursor.execute(sql)
+
     t1 = time.time()
-    # t2 = time.time()
-    for i in ip_list:
-        cursor.execute('SELECT * FROM ipdata WHERE %s BETWEEN startip AND endip' %i)
-        result = cursor.fetchall()
-        # print(result)
+    # for i in ip_list:
+    #     cursor.execute('SELECT * FROM ipdata WHERE %s >=  startip ORDER BY startip DESC LIMIT 1' % i)
+    #     result = cursor.fetchall()
+        # startip, endip = result[0][1], result[0][2]
+        # if startip <= i <= endip:
+        #     ret_list.append((i, result[0][3]))
+        # else:
+        #     ret_list.append((i, u'unknown'))
+        # print(result[0][1]+ ' str ' + result[0][2])
+    t2 = time.time()
+
+    # for i in ip_list:
+    #     cursor.execute('SELECT * FROM ipdata WHERE %s BETWEEN startip AND endip' % i)
+    #     result = cursor.fetchall()
+
     t3 = time.time()
+    # cursor.execute(sql2)
+    t4 = time.time()
+
     print(t1 - t0)
-    print(t3 - t1)
+    print(t2 - t1)
+    print(t4 - t3)
+    print(t3 - t2)
+
+    cursor.close()
+    conn.close()
 
 
 
