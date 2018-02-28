@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
-from django_demo.models import People
+from django_demo.models import People, Article, Comment
 from django.template import Context, Template
+from django_demo.form import CommentForm
+
 
 
 # Create your views here.
@@ -12,7 +14,7 @@ def first_try(request):
             <head>
                 <meta charset="utf-8">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css" media="screen" title="no title">
-                <title>diango</title>
+                <title> django </title>
             </head>
             <body>
                 <h1 class="ui center aligned icon header">
@@ -29,3 +31,39 @@ def first_try(request):
     # 渲染模板
     web_page = t.render(c)
     return HttpResponse(web_page)
+
+
+
+
+
+
+def index(request):
+    print(request)
+    print('===' * 30)
+    print(dir(request))
+    print('===' * 30)
+    print(type(request))
+
+    queruseet = request.GET.get('tag')
+    print(queruseet)
+    if queruseet:
+        article_list = Article.objects.filter(tag=queruseet)
+    else:
+        # 数据库操作方法，从指定表中取得所有值  table_mame.objects.all()
+        article_list = Article.objects.all()
+
+    context = {}
+
+    # 往字典中填入数据
+    context['article_list'] = article_list
+    index_page = render(request, 'first_web_2.html', context)
+    return index_page
+
+
+def detail(request):
+    form = CommentForm
+    context = {}
+    comment_list = Comment.objects.all()
+    context['comment_list'] = comment_list
+    context['form'] = form
+    return render(request, 'detail.html', context)
