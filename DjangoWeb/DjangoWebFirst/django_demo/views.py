@@ -1,9 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpRequest, HttpResponse
 from django_demo.models import People, Article, Comment
 from django.template import Context, Template
 from django_demo.form import CommentForm
-
 
 
 # Create your views here.
@@ -33,10 +32,6 @@ def first_try(request):
     return HttpResponse(web_page)
 
 
-
-
-
-
 def index(request):
     print(request)
     print('===' * 30)
@@ -46,6 +41,7 @@ def index(request):
 
     queruseet = request.GET.get('tag')
     print(queruseet)
+
     if queruseet:
         article_list = Article.objects.filter(tag=queruseet)
     else:
@@ -61,7 +57,20 @@ def index(request):
 
 
 def detail(request):
-    form = CommentForm
+    if request.method == 'GET':
+        form = CommentForm
+    if request.method == 'POST':
+        # 绑定表单， 是进行数据校验的前置步骤
+        form = CommentForm(request.POST)
+        # 判断绑定的表单是否通过数据验证
+        if form.is_valid():
+            # 表单数据通过后，会将数据存储在 cleaned_data 中
+            name = form.cleaned_data['name']
+            comment = form.cleaned_data['comment']
+            c = Comment(name=name, comment=comment)
+            c.save()
+            # redirect 重定向回 name=detail 的 url
+            return redirect(to='detail')
     context = {}
     comment_list = Comment.objects.all()
     context['comment_list'] = comment_list
