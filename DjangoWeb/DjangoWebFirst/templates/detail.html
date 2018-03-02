@@ -88,12 +88,15 @@
 
     </div>
     <div class="ui divider"></div>
+    {# semantic error form 布局 #}
     <form class="ui error tiny form" method="post">
+        {# 判断是否存在 error 信息 #}
         {% if form.errors %}
             <div class="ui error message">
                 {{ form.errors }}
             </div>
             {% for field in form %}
+                {# 遍历表单字段，不通过数据校验的字段渲染成出错样式 并给出提示 #}
                 <div class="{{ field.errors|yesno:'error,' }} field">
                     {{ field.label }}
                     {{ field }}
